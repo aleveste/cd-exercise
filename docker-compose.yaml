@@ -1,4 +1,10 @@
 services:
+  app:
+    image: aleveste/cd-exercise:latest
+    container_name: myapp
+    ports:
+      - "8080:8080"
+    restart: always
   watchtower:
     image: containrrr/watchtower
     environment:
